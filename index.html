@@ -1,0 +1,446 @@
+<!dcotype html>
+<html>
+<head>
+     <meta charset="utf-8">
+	
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+  <style>
+		body{
+		margin:0;
+		font-family: 'Nanum Gothic', sans-serif;
+		text-decoration: none;
+		}
+		a{
+		text-decoration: none;
+		}
+		button {
+    		position: absolute;
+    		top: 70%;
+    		right: 70%;
+    		outline: none;
+    		border: 1px solid white;
+    		background: #ffffff00;
+    		padding: 10px 50px;
+    		border-radius: 20px;
+		}
+		button a {
+    		text-decoration: none;
+    		color: white;
+		}
+		h1 {
+    		position: absolute;
+    		top: 30%;
+    		right: 50%;
+		color: white;
+		font-size:3em;
+		}
+		.navigation {
+    		position: absolute;
+    		 background: #cccccc2e;
+    		width: 100%;
+    		padding: 20px;
+		position: fixed;
+		top:0;
+		left:0;
+		z-index: 1;
+		}
+		.navigation a {
+   		 text-decoration: none;
+    		 padding: 20px;
+		 color: white;
+		}
+		#booknow input {
+    		background: #cccccc29;
+    		width: 40%;
+		outline: none;
+		border:none;
+    		padding: 12px;
+    		margin: 15px;
+		text-align: center;
+		color: white;
+		font-size: 16px;
+		}
+		#booknow {
+    		background: black;
+		text-align: center;
+		padding:4%;
+		}
+		h2 {
+    		background: #ccc;
+		color: white;
+		text-align: center;
+		margin:0;
+		padding: 13px;
+		font-family: tahoma;
+		}
+		a.send {
+    		text-decoration: none;
+    		color: white;
+    		background: green;
+    		padding: 8px 200px;
+		}
+		h3 {
+    		background: #ccc;
+    		margin: 0;
+		color: white;
+		text-align: center;
+		font-size: 1.5em;
+		padding: 10px;
+		}
+		img.loken {
+  		  border-radius: 40%;
+		}
+		.lokendra {
+  		box-shadow: 0 4px 8px 0 white;
+  		transition: 0.3s;
+  		width: 10%;
+		margin: 50px;
+		padding: 40px;
+    		text-align: center;
+		}
+		.lokendra:hover {
+  		 box-shadow: 0 4px 8px 0 #03a9f4;
+		}
+		.mohan {
+  		box-shadow: 0 4px 8px 0 white;
+  		transition: 0.3s;
+  		width: 10%;
+		margin: 50px;
+		padding: 40px;
+    		text-align: center;
+		}
+		.mohan:hover {
+  		 box-shadow: 0 4px 8px 0 #03a9f4;
+		}
+		.dinesh {
+  		box-shadow: 0 4px 8px 0 white;
+  		transition: 0.3s;
+  		width: 10%;
+		margin: 50px;
+		padding: 40px;
+    		text-align: center;
+		}
+		.dinesh:hover {
+  		 box-shadow: 0 4px 8px 0 #03a9f4;
+		}
+		.bastola {
+  		box-shadow: 0 4px 8px 0 white;
+  		transition: 0.3s;
+  		width: 10%;
+		margin: 50px;
+		padding: 40px;
+    		text-align: center;
+		}
+		.bastola:hover {
+  		  box-shadow: 0 4px 8px 0 #03a9f4;
+		}		
+		#about{
+		display: flex;
+		justify-content: space-between;
+		background: black;
+		color: white;
+		}
+		p.jumbo {
+    		position: absolute;
+    		color: white;
+    		top: 55%;
+    		right: 60%;
+		}
+
+		a.team {
+    		text-decoration: none;
+    		background: green;
+    		color: white;
+    		padding: 10px 40px;
+		}
+
+		.footer {
+    		display: flex;
+    		justify-content: space-evenly;
+		color: white;
+		background: black;
+		font-family: 'Abel', sans-serif;
+		font-size: 20px;
+		}
+		.footer a{
+		color: white;
+		}
+		form {
+    		position: absolute;
+    		top: 250%;
+		right: 10%;
+		}
+		form input{
+		border: none;
+		padding: 10px;
+		width: 80%;
+		outline: none;
+		margin: 2%;
+		text-align: center;
+		outline: none;
+		background: black;
+		color: white;
+		border-radius: 8px;
+		}
+		input[type="message"] {
+    		padding: 13%;
+		border-radius: 10px;
+		}
+		::placeholder{
+		color: white;
+		}
+
+		button.message {
+    		position: absolute;
+    		top: 100%;
+		right: 51%;
+		color: green;
+		}
+		button.message:hover{
+		color: white;
+		}
+		.active{
+		background: green;
+		}
+		.navigation a:hover:not(.active){
+		background: #cccccc3b;
+		}
+		.fixed-bg {
+  		background-image: url(images/background.jpg);
+  		background-attachment: fixed;
+  		background-position: center;
+		height: 600px;
+  		background-size: cover;
+		}
+		.animation{
+    		animation: slide .9s;
+ 		}
+  		@keyframes slide {
+   		from {
+      		opacity: 0;
+      		transform: translateX(70%);
+   		 } 
+   		 to {
+      		opacity: 1;
+      		transform: translateX(0%);
+    		}
+  		}
+
+
+</style>
+</head>
+
+<body>
+	<div class="navigation">
+
+<a href="#"class="active">Home</a>
+<a href="#about" > Our team </a>
+<a href="#booknow">Booking</a>
+<a href="#contact">Contact us</a>
+
+</div>
+
+<div class="fixed-bg">
+
+</div>
+
+<br>
+<h1> save your time & Do<br> your work on time </h1>
+<p class="jumbo"> Transportation is the best idea to save your time.<br> It is also the source of income </p>
+
+
+
+
+
+<a href="#booknow"><button> Book Now </a></button>
+
+<h2>Book now</h2>
+<div id="booknow" class="booknow">	
+
+	<br><br>
+		
+		<input type="text" placeholder="Username" name="name">
+
+
+
+		
+		<input type="email" placeholder="Enter Email" name="email">
+
+
+
+		<input type="text" placeholder="place you want to go" name="place">
+
+		
+		<input type="date" placeholder="when" name="where">
+
+		<br><br>
+		<a href="#" class="send">Book</a>
+	</div>
+
+	<h3> Our Team </h3>
+	<div id="about" class="about">
+		
+		
+	<div class="lokendra">	
+		<img src="images/loken.jpg" class="loken">
+		<h4>Lokendra shahi</h4>
+		<p> It's me loken form nnsc. i <br>am a web developer </p>
+		<a href="contact.html" class="team"> More </a>
+	</div>
+
+	<div class="mohan">
+		<img src="images/mohan.jpg" class="loken">
+		 <h4> Mohan karki</h4>
+		<p> Mohan Bro is The Best Hacker Of uor team.</p>
+		<a href="contact.html" class="team"> More </a>
+	</div>
+	
+	<div class="dinesh">
+		<img src="images/dinesh.jpg" class="loken">
+		<h4> <b>Dinesh Neupane</b></h4>
+		  <p> I am Dinesh form nnsc .I am programmer .</p>
+		<a href="contact.html" class="team"> More</a>	
+	  </div>
+
+	<div class="bastola">
+		<img src="images/bastola.jpg" class="loken"><br>
+		<h4> Bastola Budha</h4>
+		<p> i am Web designer of bus ticketing website</p>
+		<a href="contact.html" class="team"> More </a>
+		  </div>
+	</div>
+
+
+	<div class="contact" id="contact">
+		
+		<h2> Contact us </h2>
+		
+			<img src="images/contact.jpg" width="100%">
+
+			<form>
+				
+
+					<input type="text" placeholder=" Your name" name="name">
+			
+				
+				
+					<input type="email" placeholder=" yourname@gmail.com" name="email">
+		
+			
+
+					<input type="text" placeholder="drop your problem .." name="text">
+
+					
+					<input type="message" placeholder=" Leava your feedback" name="message">
+			
+				 <button class="message"> Send <i class=" fa fa-send"></i></button>
+			</form>
+			
+	</div>
+
+
+
+
+	<div class="footer">
+	
+	<div class="links">
+		<h5> Important links</h5>
+		<a href="#booknow "> Booking System</a><br><br>
+		<a href="#about">  Our Team </a><br><br>
+		<a href="#contact">  Contact  </a>
+	</div>
+
+	
+
+	<div class="links">
+		<h5> Our Partner </h5>
+		<img src="images/cocacola.png">
+		<img src="images/air.jpeg"><br>
+		<img src="images/nepal.jpg">
+		<img src="images/bus.jpg">
+	</div>
+
+	<div class="links">
+		<h5> follow </h5>
+		<i class="fa fa-facebook"></i>	
+		<i class="fa fa-youtube"></i>
+		<i class="fa fa-linkedin"></i>
+		<i class="fa fa-instagram"></i>
+		<p>Email: salinmanbania1234@gmail.com</p>
+		<p> Contact no: 9840297322</p>
+	</div>
+
+	<div class="links">
+		<h5> About Us </h5>
+		<p> We are the web developer from NNSC. <br>This website hepls user for transportation<br>or go one place to another place </p>
+
+		
+	</div>
+
+	
+
+<script>
+
+
+document.addEventListener('scroll', function(e) {
+  
+        var pos = document.querySelector(".about").offsetTop;
+
+      var winTop = window.pageYOffset;
+  
+  if (pos < winTop + 600) {
+          document.querySelector(".about").classList.add("animation");
+        }
+ 
+  
+});
+
+
+
+
+document.addEventListener('scroll', function(e) {
+  
+        var pos = document.querySelector(".booknow").offsetTop;
+
+      var winTop = window.pageYOffset;
+ 
+  
+  
+  if (pos < winTop + 600) {
+          document.querySelector(".booknow").classList.add("animation");
+        } 
+  
+});
+
+
+
+document.addEventListener('scroll', function(e) {
+  
+        var pos = document.querySelector(".contact").offsetTop;
+
+      var winTop = window.pageYOffset;
+ 
+  
+  
+  if (pos < winTop + 600) {
+          document.querySelector(".contact").classList.add("animation");
+        }
+ 
+});
+
+
+</script>
+
+
+
+</body>
+</html>
